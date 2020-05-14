@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Kalkulator</title>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="display">
+				<div id="top_text"></div>
+				<div id="bottom_text"></div>
+			</div>
+			<button class="sign" onclick="append('(')">(</button>
+			<button class="sign" onclick="append(')')">)</button>
+			<button class="function" onclick="reset()" style="width: 210px;">C</button>
+			<button class="number" onclick="append('7')">7</button>
+			<button class="number" onclick="append('8')">8</button>
+			<button class="number" onclick="append('9')">9</button>
+			<button class="sign" onclick="append('/')">÷</button>
+			<button class="number" onclick="append('4')">4</button>
+			<button class="number" onclick="append('5')">5</button>
+			<button class="number" onclick="append('6')">6</button>
+			<button class="sign" onclick="append('*')">×</button>
+			<button class="number" onclick="append('1')">1</button>
+			<button class="number" onclick="append('2')">2</button>
+			<button class="number" onclick="append('3')">3</button>
+			<button class="sign" onclick="append('-')">−</button>
+			<button class="number" onclick="append('0')">0</button>
+			<button class="number" onclick="append('.')">.</button>
+			<button class="function" onclick="calculate()">=</button>
+			<button class="sign" onclick="append('+')">+</button>
+			<p>Wskazówka: użyj ×× aby obliczyć potęgę (np. wpisz <b>2××3</b>, aby otrzymać 8)</p>
+		</div>
+	</body>
+	<script>
+		let mode = 0;
+		let equation = "";
+		let result = "";
+
+		function calculate() {
+			mode = 1;
+			update();
+		}
+
+		function reset() {
+			mode = 0;
+			equation = "";
+			document.getElementById("top_text").innerHTML = "";
+			update();
+		}
+
+		function append(value) {
+			if (mode == 1) {
+				equation = "";
+				mode = 0;
+			}
+			equation += value;
+			update();
+		}
+
+		function update() {
+			try {
+				result = eval(equation);
+			} catch (e) {
+				if (mode == 1) {
+					result = "Błąd"
+				}
+			}
+
+			if (result == undefined && equation != "" || result == Infinity) {
+				result = "Błąd"
+			}
+
+			let equationReplaced = equation.replace("*", "×").replace("/", "÷");;
+
+			if (mode == 0) {
+				document.getElementById("bottom_text").innerHTML = equationReplaced;
+				if (result != undefined) {
+					document.getElementById("top_text").innerHTML = result;
+				}
+			} else {
+				document.getElementById("bottom_text").innerHTML = result;
+				document.getElementById("top_text").innerHTML = equationReplaced;
+			}
+
+		}
+	</script>
+
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pl">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../style.css">
+		<link rel="icon" href="logo.png">
+		<title>JelNiSław</title>
+	</head>
+
+	<body>
+		<h1>404</h1>
+		<h2 id="error"></h2>
+		<a href="http://jelnislaw.rf.gd/"><input type="button" value="Strona główna"></a>
+		<a href="https://www.youtube.com/c/lilskrrre" target="_blank"><input type="button" value="lil skrrre"></a>
+		<script>
+			var text = "";
+
+			switch (Math.floor(Math.random() * 7)) {
+				case 0: text = "jaki z cb menel do niczego jestes jezuuu ić do śmietnika i tam wejdz bo nawet internetu nie portafiz obslugiwac jezuuu"; break;
+				case 1: text = "i co"; break;
+				case 2: text = "do niczego jestes"; break;
+				case 3: text = "Nie nauczyli cię nic w szkole?"; break;
+				case 4: text = "Umiesz pisać?"; break;
+				case 5: text = "Błond"; break;
+				case 6: text = "Idź lepiej lila skrrre sobie posłuchaj"; break;
+				default: text = "Błąd"; break;
+			}
+
+			document.getElementById("error").innerHTML = text;
+		</script>
+	</body>
+
+</html>

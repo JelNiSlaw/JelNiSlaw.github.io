@@ -1,0 +1,27 @@
+body {
+	color: white;
+	background: black;
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+}
+
+.symbols {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+}
+
+.logo {
+	display: block;
+	margin: auto;
+	width: 10%;
+}
+
+.symbols input {
+	cursor: crosshair;
+}
