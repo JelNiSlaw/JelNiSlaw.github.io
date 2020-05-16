@@ -38,6 +38,11 @@ p {
 	width: 10%;
 }
 
+.comments {
+	width: 50%;
+	margin: 16px;
+}
+
 .button404 {
 	background: white;
 	color: black;
