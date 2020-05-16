@@ -12,14 +12,12 @@
 	<body>
 		<h1>404</h1>
 		<h2 id="error"></h2>
-		<a href="https://jelnislaw.github.io/"><input type="button" value="Strona główna"></a>
-		<a href="https://www.youtube.com/c/lilskrrre" target="_blank"><input type="button" value="lil skrrre"></a>
+		<a href="./" class="button404">Strona główna</a>
+		<a href="https://www.youtube.com/c/lilskrrre" target="_blank" class="button404">lil skrrre</a>
 		<script>
-			errors = ["i co", "do niczego jestes", "Nie nauczyli cię pisać nic w szkole?", "Umiesz pisać?", "Błond", "Idź lepiej lila skrrre sobie posłuchaj"];
-
+			errors = ["i co", "do niczego jestes", "Nie nauczyli cię pisać w szkole?", "Umiesz pisać?", "Błond", "Idź lepiej lila skrrre sobie posłuchaj", "Nie pytają cię o imię walcząc z ostrym cieniem mgły", "ić plakac w koncie"];
 
 			var text = errors[Math.floor(Math.random() * errors.length)];
-
 			document.getElementById("error").innerHTML = text;
 		</script>
 	</body>
