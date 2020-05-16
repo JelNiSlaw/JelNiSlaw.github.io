@@ -76,7 +76,7 @@
 				result = "Błąd"
 			}
 
-			let equationReplaced = equation.replace("*", "×").replace("/", "÷");;
+			let equationReplaced = equation.split("*").join("×").split("/").join("÷");
 
 			if (mode == 0) {
 				document.getElementById("bottom_text").innerHTML = equationReplaced;
