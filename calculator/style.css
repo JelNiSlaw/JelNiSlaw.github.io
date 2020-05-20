@@ -3,6 +3,10 @@
 	font-variant-ligatures: none;
 }
 
+body {
+	margin: 16px;
+}
+
 .container {
 	width: 440px;
 	margin-left: auto;
