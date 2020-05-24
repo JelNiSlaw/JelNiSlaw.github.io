@@ -11,13 +11,22 @@
 
 	<body>
 		<h1>404</h1>
+		<h2 id="path"></h2>
 		<h2 id="error"></h2>
 		<a href="/" class="button404">Strona główna</a>
 		<a href="https://www.youtube.com/c/lilskrrre" target="_blank" class="button404">lil skrrre</a>
 		<script>
 			errors = ["i co", "do niczego jestes", "Nie nauczyli cię pisać w szkole?", "Umiesz pisać?", "Błond", "Idź lepiej lila skrrre sobie posłuchaj", "Nie pytają cię o imię walcząc z ostrym cieniem mgły", "ić plakac w koncie", "Nie martw się", "No napraw stronę! JUŻ!", "Jezuuu", "Spadaj", "Alt+F4", "Ctrl+W"];
 
+			let path = window.location.pathname;
+
+			if (path.charAt(0) == "/") {
+				path = path.substring(1);
+			}
+
 			var text = errors[Math.floor(Math.random() * errors.length)];
+
+			document.getElementById("path").innerHTML = "Nie znaleziono strony: " + path;
 			document.getElementById("error").innerHTML = text;
 		</script>
 	</body>
