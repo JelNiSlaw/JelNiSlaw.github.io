@@ -39,7 +39,7 @@ button:active {
 	display: flex;
 	flex-wrap: wrap;
 
-	padding: 5px;
+	padding: 15px;
 	border: solid #808080 4px;
 	border-radius: 8px;
 }
