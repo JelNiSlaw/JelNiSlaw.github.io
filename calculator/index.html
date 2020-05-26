@@ -45,8 +45,10 @@
 		let result = "";
 
 		function calculate() {
-			mode = 1;
-			update();
+			if (equation != "") {
+				mode = 1;
+				update();
+			}
 		}
 
 		function reset() {
