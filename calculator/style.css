@@ -57,21 +57,21 @@ button:active {
 }
 
 .number {
-	background: #e6e6e6;
+	background: #00000019;
 	color: black;
 }
 
 .number:hover {
-	background: #cccccc;
+	background: #00000033;
 }
 
 .sign {
-	background: #cccccc;
+	background: #00000033;
 	color: black;
 }
 
 .sign:hover {
-	background: #b3b3b3;
+	background: #0000004d;
 }
 
 .function {
@@ -87,7 +87,7 @@ button:active {
 	width: 430px;
 	height: 100px;
 	margin: 5px;
-	background: #e6e6e6;
+	background: #00000019;
 
 	text-align: right;
 	overflow: hidden;
@@ -100,8 +100,12 @@ button:active {
 }
 
 #bottom_text {
-	color: black;
+	color: #000;
 	font-size: 50px;
 	height: 70px;
 	user-select: all;
+}
+
+.darkmode-toggle {
+	all: initial;
 }
