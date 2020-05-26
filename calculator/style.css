@@ -10,8 +10,7 @@ body {
 
 button {
 	outline: none;
-	shape-outside: margin-box;
-	box-shadow: 0px 5px 0px 0px #00000033;
+	box-shadow: 0px 5px 0px 0px #00000040;
 }
 
 button:active {
@@ -39,6 +38,10 @@ button:active {
 	margin-right: auto;
 	display: flex;
 	flex-wrap: wrap;
+
+	padding: 5px;
+	border: solid #808080 4px;
+	border-radius: 8px;
 }
 
 .number,
@@ -47,8 +50,7 @@ button:active {
 .display {
 	width: 100px;
 	height: 100px;
-	border: solid #00000033 2px;
-	border-radius: 8px;
+	border: solid #00000080 4px;
 	border-radius: 8px;
 	margin: 5px;
 	text-align: center;
@@ -85,7 +87,7 @@ button:active {
 
 .display {
 	width: 430px;
-	height: 100px;
+	height: 150px;
 	margin: 5px;
 	background: #00000019;
 
@@ -95,17 +97,25 @@ button:active {
 
 #top_text {
 	color: #808080;
-	font-size: 25px;
-	height: 30px;
+	font-size: 50px;
+	height: 50px;
 }
 
 #bottom_text {
 	color: #000;
-	font-size: 50px;
-	height: 70px;
+	font-size: 75px;
+	height: 100px;
 	user-select: all;
 }
 
 .darkmode-toggle {
 	all: initial;
+}
+
+.help {
+	text-align: center;
+	margin: 8px;
+	width: 440px;
+	margin-left: auto;
+	margin-right: auto;
 }
