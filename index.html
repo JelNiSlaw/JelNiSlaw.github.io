@@ -4,64 +4,37 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="style.css">
-		<title>JelNiSław</title>
+		<title>Strona JelNiSława (Stanisław Jelnicki)</title>
+		<link async rel="stylesheet" href="/style.css">
+		<meta name="Description" content="Na tej stronie dodaję linki do moich różnych projektów.">
 	</head>
 
 	<body>
-		<div class="container">
-			<div class="symbols">
-				<h1>Symbole</h1>
-				<label>
-					<p>ZWJ (U+200D)</p>
-					<input type="text" value="‍" id="1" readonly onclick="copy(1)">
-				</label>
-				<label>
-					<p>ZWNJ (U+200C)</p>
-					<input type="text" value="‌" id="2" readonly onclick="copy(2)">
-				</label>
-				<label>
-					<p>RTL Mark (U+200F)</p>
-					<input type="text" value="‏" id="3" readonly onclick="copy(3)">
-				</label>
-				<label>
-					<p>RTL Override (U+202E)</p>
-					<input type="text" value="‮" id="4" readonly onclick="copy(4)">
-				</label>
-				<label>
-					<p>LTR Mark (U+200E)</p>
-					<input type="text" value="‎" id="5" readonly onclick="copy(5)">
-				</label>
-				<label>
-					<p>LTR Override (U+202D)</p>
-					<input type="text" value="‭" id="6" readonly onclick="copy(6)">
-				</label>
-			</div>
-			<div class="logo">
-				<a href="logo.png" target="_blank">
-					<img src="logo.png" alt="JelNiSław" width="100%">
-				</a>
-			</div>
+		<h1>JelNiSław</h1>
+		<h2>Witaj na mojej (bardzo ładnej) stronie</h2>
+		<div class="projects">
+			<h2>Linki do moich projektów i stron</h2>
+			<p><a href="./calculator/">Kalkulator w JavaScript</a></p>
+			<p><a href="/unicode-characters/">Lista znaki Unicode o zerowej szerokości</a></p>
+			<p><a href="/mc/">Link do pobrania najnowszej wersji szablonu paczki zasobów Minecraft Bedrock</a></p>
+			<p><a href="/disqus/">Bardzo aktywna strona z komentarzami Disqus</a></p>
+			<p><a href="/logo.png">Pełen rozmiar mojego zdjęcia profilowego</a></p>
 		</div>
-		<div class="comments">
-			<div id="disqus_thread"></div>
-			<script>
-				(function () {
-					var d = document, s = d.createElement('script');
-					s.src = 'https://jelnislaw.disqus.com/embed.js';
-					s.setAttribute('data-timestamp', +new Date());
-					(d.head || d.body).appendChild(s);
-				})();
-			</script>
-			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-		</div>
+		<a href="/logo.png"><img class="logo" src="/logo.png" loading="lazy" alt="Moje zdjęcie profilowe"></a>
 	</body>
-	<script>
-		function copy(ID) {
-			let copyText = document.getElementById(ID);
-			copyText.select();
-			document.execCommand("copy");
+	<style>
+		a {
+			color: white;
+			font-size: 16px;
 		}
-	</script>
+
+		.projects {
+			margin-top: 16px;
+		}
+
+		.logo {
+			height: 25vh;
+		}
+	</style>
 
 </html>
