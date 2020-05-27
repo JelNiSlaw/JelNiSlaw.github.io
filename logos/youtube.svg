@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 234.6666717529297 165.3333282470703"
+   height="165.3333282470703"
+   width="234.6666717529297">
+  <title
+     id="title4518">YouTube</title>
+  <defs
+     id="defs2">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath847">
+      <path
+         d="M 0,192 H 192 V 0 H 0 Z"
+         id="path845" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath891">
+      <path
+         d="M 0,192 H 192 V 0 H 0 Z"
+         id="path889" />
+    </clipPath>
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>JelNiSław</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-2.842170943040401e-14,119.2991899999999)"
+     id="layer1">
+    <g
+       id="g843"
+       clip-path="url(#clipPath847)"
+       transform="matrix(1.333333333333333,0,0,-1.333333333333333,-10.66706666666664,91.36774333333336)">
+      <g
+         id="g849"
+         transform="translate(180.3223,138.6372)">
+        <path
+           d="m 0,0 c -2.024,7.621999999999999 -7.987,13.624 -15.561,15.661 -13.724,3.702 -68.76099999999991,3.702 -68.76099999999991,3.702 0,0 -55.03700000000011,0 -68.76200000000009,-3.702 -7.573,-2.037 -13.537,-8.039000000000001 -15.561,-15.661 -3.677,-13.814 -3.677,-42.637 -3.677,-42.637 0,0 0,-28.822 3.677,-42.63799999999999 2.024,-7.62100000000001 7.988,-13.623 15.561,-15.66100000000002 13.725,-3.701 68.76200000000012,-3.701 68.76200000000012,-3.701 0,0 55.03699999999996,0 68.76099999999978,3.701 C -7.987,-98.89799999999999 -2.024,-92.896 0,-85.27499999999999 3.678,-71.459 3.678,-42.637 3.678,-42.637 c 0,0 0,28.823 -3.678,42.637"
+           style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path851" />
+      </g>
+      <g
+         id="g853"
+         transform="translate(78,69.8311)">
+        <path
+           d="M 0,0 46,26.168 0,52.338 Z"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path855" />
+      </g>
+    </g>
+  </g>
+</svg>
