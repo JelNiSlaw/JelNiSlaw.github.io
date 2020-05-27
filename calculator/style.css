@@ -1,9 +1,6 @@
-* {
+body {
 	font-family: "Fira Code", monospace;
 	font-variant-ligatures: none;
-}
-
-body {
 	margin: 16px;
 	user-select: none;
 }

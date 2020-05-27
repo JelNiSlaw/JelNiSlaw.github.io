@@ -5,6 +5,8 @@ html {
 	background: black;
 	text-align: center;
 	font-family: "Fira Code", monospace;
+	font-variant-ligatures: none;
+	user-select: none;
 }
 
 h1 {
