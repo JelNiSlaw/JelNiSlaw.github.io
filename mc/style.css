@@ -1,0 +1,30 @@
+body {
+	font-size: 32px;
+}
+
+table,
+th,
+td {
+	border: 5px solid #808080;
+	border-collapse: collapse;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+th,
+td {
+	padding: 16px;
+}
+
+a {
+	color: #ffffff;
+
+	transition: color 0.25s ease;
+}
+
+a:hover {
+	color: #808080;
+}
