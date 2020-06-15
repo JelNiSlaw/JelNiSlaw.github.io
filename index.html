@@ -21,20 +21,25 @@
 			<p><a href="/disqus/">Bardzo aktywna strona z komentarzami Disqus</a></p>
 			<p><a href="/logo.png">Pełen rozmiar mojego zdjęcia profilowego</a></p>
 		</div>
-		<a href="/logo.png"><img class="logo" src="/logo.png" loading="lazy" alt="Moje zdjęcie profilowe"></a>
+		<div>
+			<a href="/logo.png"><img class="logo" src="/logo.png" alt="Moje zdjęcie profilowe" loading="lazy"></a>
+		</div>
+		<div>
+			<img class="counter" src="https://www.webfreecounter.com/hit.php?id=gaoodq&nd=1&style=2" alt="Licznik wyświetleń" loading="lazy">
+		</div>
 	</body>
 	<style>
-		a {
-			color: white;
-			font-size: 16px;
-		}
-
 		.projects {
 			margin-top: 16px;
 		}
 
 		.logo {
-			height: 25vh;
+			width: 25vh;
+		}
+
+		.counter {
+			height: 5vh;
+			image-rendering: pixelated;
 		}
 	</style>
 
