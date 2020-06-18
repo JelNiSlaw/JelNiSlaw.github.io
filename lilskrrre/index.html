@@ -11,7 +11,7 @@
 	</head>
 
 	<body>
-		<div class="title">lil skrrre</div>
+		<div id="title" onmouseover="hover()" onmouseout="unhover()">lil skrrre</div>
 		<main>
 			<div class="links">
 				<div class="link">
@@ -66,5 +66,15 @@
 			</script>
 		</div>
 	</body>
+	<script async>
+		unhover();
+
+		function hover() {
+			document.getElementById("title").innerHTML = "lil ssie";
+		}
+		function unhover() {
+			document.getElementById("title").innerHTML = "lil skrrre";
+		}
+	</script>
 
 </html>
