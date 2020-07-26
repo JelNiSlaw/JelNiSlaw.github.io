@@ -11,7 +11,7 @@
 	</head>
 
 	<body>
-		<div id="title" onmouseover="hover()" onmouseout="unhover()">lil skrrre</div>
+		<div id="title" onmousedown="down()" onmouseup="up()">lil skrrre</div>
 		<main>
 			<div class="links">
 				<div class="link">
@@ -54,14 +54,14 @@
 		</main>
 		<div class="video">
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-			<iframe title="Najnowszy utwór" id="youtube_video" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+			<iframe title="Najnowszy utwór" id="ytplayer" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 			<script async>
 				const channelID = "UCQ5XtkvEyjilnna8t9o1G1g";
 				const reqURL = "https://www.youtube.com/feeds/videos.xml?channel_id=";
 				$.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(reqURL) + channelID, function (data) {
 					const link = data.items[0].link;
 					const id = link.substr(link.indexOf("=") + 1);
-					$("#youtube_video").attr("src", "https://youtube.com/embed/" + id + "?controls=0&showinfo=0&rel=0");
+					$("#ytplayer").attr("src", "https://youtube.com/embed/" + id + "?autoplay=1&origin=https://jelnislaw.ml/&controls=1");
 				});
 			</script>
 		</div>
@@ -69,10 +69,10 @@
 	<script async>
 		unhover();
 
-		function hover() {
+		function down() {
 			document.getElementById("title").innerHTML = "lil ssie";
 		}
-		function unhover() {
+		function up() {
 			document.getElementById("title").innerHTML = "lil skrrre";
 		}
 	</script>
