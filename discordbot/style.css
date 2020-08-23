@@ -7,8 +7,13 @@
 	--verydark: #23272a;
 }
 
+::selection {
+	background: var(--greyple);
+}
+
 html {
 	background: var(--dark);
+	user-select: text;
 }
 
 body {
