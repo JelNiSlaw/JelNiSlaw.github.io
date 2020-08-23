@@ -1,0 +1,96 @@
+:root {
+	--black: #000000;
+	--white: #ffffff;
+	--blurple: #7289da;
+	--greyple: #99aab5;
+	--dark: #2c2f33;
+	--verydark: #23272a;
+}
+
+html {
+	background: var(--dark);
+}
+
+body {
+	margin: 0px;
+}
+
+h1 {
+	font-size: 64pt;
+}
+
+h2 {
+	font-size: 32pt;
+}
+
+sup {
+	font-size: 50%;
+	padding: 0.25em;
+}
+
+.highlight {
+	transition-duration: 0.15s;
+	transition-property: color;
+	transition-timing-function: 1;
+
+	color: var(--blurple);
+}
+
+.title {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.logo {
+	width: 256px;
+}
+
+.buttons {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.button {
+	transition-duration: 0.2s;
+	transition-property: background, box-shadow, padding, margin, z-index;
+	transition-timing-function: ease;
+
+	font-size: 16pt;
+	background: var(--blurple);
+	color: var(--white);
+	border-radius: 16px;
+	padding: 16px;
+	margin: 8px;
+	text-decoration: none;
+	z-index: 1 !important;
+}
+
+.button:hover {
+	background: var(--verydark);
+	box-shadow: 0px 0px 64px 8px var(--black);
+	padding: 20px;
+	margin: 4px;
+	z-index: 0 !important;
+}
+
+a {
+	text-decoration: none;
+}
+
+.button .highlight {
+	color: var(--black);
+}
+
+.button:hover .highlight {
+	color: var(--blurple);
+}
+
+.footer {
+	position: absolute;
+	bottom: 16px;
+	margin-left: 16px;
+	font-size: 12pt;
+	line-height: 75%;
+	text-align: left;
+}
