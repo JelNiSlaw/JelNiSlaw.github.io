@@ -21,11 +21,11 @@ body {
 }
 
 h1 {
-	font-size: 64pt;
+	font-size: 8vmin;
 }
 
 h2 {
-	font-size: 32pt;
+	font-size: 4vmin;
 }
 
 sup {
@@ -47,7 +47,7 @@ sup {
 }
 
 .logo {
-	width: 256px;
+	width: 32vmin;
 }
 
 .buttons {
@@ -61,10 +61,10 @@ sup {
 	transition-property: background, box-shadow, padding, margin, z-index;
 	transition-timing-function: ease;
 
-	font-size: 16pt;
+	font-size: 2vmin;
 	background: var(--blurple);
 	color: var(--white);
-	border-radius: 16px;
+	border-radius: 2vmin;
 	padding: 16px;
 	margin: 8px;
 	text-decoration: none;
@@ -73,14 +73,15 @@ sup {
 
 .button:hover {
 	background: var(--verydark);
-	box-shadow: 0px 0px 64px 8px var(--black);
+	box-shadow: 0px 0px 8vmin 1vmin var(--black);
 	padding: 20px;
 	margin: 4px;
 	z-index: 0 !important;
 }
 
-a {
+.button a {
 	text-decoration: none;
+	text-align: center;
 }
 
 .button .highlight {
@@ -93,9 +94,9 @@ a {
 
 .footer {
 	position: absolute;
-	bottom: 16px;
-	margin-left: 16px;
-	font-size: 12pt;
+	bottom: 2vmin;
+	margin-left: 2vmin;
+	font-size: 2vmin;
 	line-height: 75%;
 	text-align: left;
 }
