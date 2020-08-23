@@ -73,7 +73,7 @@ sup {
 
 .button:hover {
 	background: var(--verydark);
-	box-shadow: 0px 0px 8vmin 1vmin var(--black);
+	box-shadow: 0px 0px 4vmin 1vmin #00000080;
 	padding: 20px;
 	margin: 4px;
 	z-index: 0 !important;
