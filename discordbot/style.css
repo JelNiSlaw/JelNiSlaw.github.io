@@ -92,6 +92,10 @@ sup {
 	color: var(--blurple);
 }
 
+.topgg {
+	margin-top: 32px;
+}
+
 .footer {
 	position: absolute;
 	bottom: 2vmin;
